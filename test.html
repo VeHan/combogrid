@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>combogrid</title>
+    <script src="assets/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="assets/jquery-ui-1.11.4/jquery-ui.min.css">
+    <script src="assets/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="assets/css/combogrid.css">
+    <script type="text/javascript" src="assets/js/combogrid.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        combogrid.combogrid($('#d1'), {
+            url: "data.json",
+            columns: [{
+                name: 'grade',
+                width: '20%',
+                title: '年级'
+            }, {
+                name: 'major',
+                width: '20%',
+                title: '专业'
+            }, {
+                name: 'class',
+                width: '20%',
+                title: '班级'
+            }, {
+                name: 'name',
+                width: '20%',
+                title: '姓名'
+            }, {
+                name: 'stuNum',
+                width: '20%',
+                title: '学号'
+            }],
+            onRowClick: function(rowData) {
+                alert(rowData.name);
+            }
+        });
+    });
+    var isMask = fasle;
+    function mask() {
+       isMask = !isMask;
+       combogrid.mask($('#d1'),isMask);
+       if(isMask){
+            $('button').html("不遮罩");
+       }else{
+            $('button').html("遮罩");
+       }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="d1">
+    </div>
+    <button onclick="mask()">遮罩</button>
+</body>
+
+</html>

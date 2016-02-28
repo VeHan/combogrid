@@ -1,0 +1,77 @@
+  .custom-combobox {
+      position: relative;
+      display: inline-block;
+      font-size: 1.1em;
+      width: 100%;
+  }
+  
+  .custom-combobox-toggle {
+      bottom: 0;
+      left: 85%;
+      padding: 0;
+      position: absolute;
+      top: 0;
+  }
+  
+  .custom-combobox-input {
+      margin: 0;
+      padding: 5px 10px;
+      width: calc(100% - 20px);
+      text-align: center;
+  }
+  
+  .ui-state-default,
+  .ui-widget-content,
+  .ui-widget-header {
+      background: #d2d2d2;
+      color: #000000;
+      font-weight: normal;
+  }
+  
+  .ui-corner-all,
+  .ui-corner-bottom,
+  .ui-corner-left,
+  .ui-corner-bl,
+  .ui-corner-top,
+  .ui-corner-right,
+  .ui-corner-tr {
+      border-radius: 0;
+  }
+  
+  .ui-state-hover,
+  .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover,
+  .ui-state-focus,
+  .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus {
+      border: 1px solid #a5a5a5;
+  }
+  
+  .ui-state-focus {
+      color: #1c94c4;
+      font-weight: lighter;
+  }
+  
+  .ui-state-default .ui-icon {
+      background-image: url("../jquery-ui-1.11.4/images/ui-icons_222222_256x240.png");
+  }
+  
+  .ui-widget {
+      font-size: 1em;
+  }
+  
+  .ui-button {
+      margin-right: 0;
+      width: 15%;
+  }
+  
+  td {
+      text-align: center;
+  }
+
+
+ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+  overflow-x:hidden; 
+  overflow-y: auto;
+  max-height: 60%;
+}
